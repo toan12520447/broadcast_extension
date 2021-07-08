@@ -16,6 +16,13 @@
 		2F44AE232695AEC100656399 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 2F44AE222695AEC100656399 /* main.m */; };
 		2F44AE2D2695AEC100656399 /* Screen_ShareTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 2F44AE2C2695AEC100656399 /* Screen_ShareTests.m */; };
 		2F44AE382695AEC100656399 /* Screen_ShareUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 2F44AE372695AEC100656399 /* Screen_ShareUITests.m */; };
+		2F44AE4C2695AF7B00656399 /* ReplayKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2F44AE4B2695AF7B00656399 /* ReplayKit.framework */; };
+		2F44AE502695AF7B00656399 /* SampleHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = 2F44AE4F2695AF7B00656399 /* SampleHandler.m */; };
+		2F44AE572695AF7B00656399 /* ReplayKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2F44AE4B2695AF7B00656399 /* ReplayKit.framework */; };
+		2F44AE592695AF7B00656399 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2F44AE582695AF7B00656399 /* UIKit.framework */; };
+		2F44AE5D2695AF7B00656399 /* BroadcastSetupViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2F44AE5C2695AF7B00656399 /* BroadcastSetupViewController.m */; };
+		2F44AE612695AF7B00656399 /* ScreenShareSetupUI.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 2F44AE562695AF7B00656399 /* ScreenShareSetupUI.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		2F44AE642695AF7B00656399 /* ScreenShare.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 2F44AE492695AF7B00656399 /* ScreenShare.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -33,7 +40,36 @@
 			remoteGlobalIDString = 2F44AE0C2695AEBE00656399;
 			remoteInfo = "Screen-Share";
 		};
+		2F44AE5F2695AF7B00656399 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 2F44AE052695AEBE00656399 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 2F44AE552695AF7B00656399;
+			remoteInfo = ScreenShareSetupUI;
+		};
+		2F44AE622695AF7B00656399 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 2F44AE052695AEBE00656399 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 2F44AE482695AF7B00656399;
+			remoteInfo = ScreenShare;
+		};
 /* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		2F44AE6B2695AF7B00656399 /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				2F44AE642695AF7B00656399 /* ScreenShare.appex in Embed App Extensions */,
+				2F44AE612695AF7B00656399 /* ScreenShareSetupUI.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		2F44AE0D2695AEBE00656399 /* Screen-Share.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Screen-Share.app"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -54,6 +90,16 @@
 		2F44AE332695AEC100656399 /* Screen-ShareUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Screen-ShareUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		2F44AE372695AEC100656399 /* Screen_ShareUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Screen_ShareUITests.m; sourceTree = "<group>"; };
 		2F44AE392695AEC100656399 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2F44AE492695AF7B00656399 /* ScreenShare.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = ScreenShare.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		2F44AE4B2695AF7B00656399 /* ReplayKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ReplayKit.framework; path = System/Library/Frameworks/ReplayKit.framework; sourceTree = SDKROOT; };
+		2F44AE4E2695AF7B00656399 /* SampleHandler.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SampleHandler.h; sourceTree = "<group>"; };
+		2F44AE4F2695AF7B00656399 /* SampleHandler.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SampleHandler.m; sourceTree = "<group>"; };
+		2F44AE512695AF7B00656399 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2F44AE562695AF7B00656399 /* ScreenShareSetupUI.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = ScreenShareSetupUI.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		2F44AE582695AF7B00656399 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		2F44AE5B2695AF7B00656399 /* BroadcastSetupViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BroadcastSetupViewController.h; sourceTree = "<group>"; };
+		2F44AE5C2695AF7B00656399 /* BroadcastSetupViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BroadcastSetupViewController.m; sourceTree = "<group>"; };
+		2F44AE5E2695AF7B00656399 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -78,6 +124,23 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		2F44AE462695AF7B00656399 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2F44AE4C2695AF7B00656399 /* ReplayKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2F44AE532695AF7B00656399 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2F44AE572695AF7B00656399 /* ReplayKit.framework in Frameworks */,
+				2F44AE592695AF7B00656399 /* UIKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -87,6 +150,9 @@
 				2F44AE0F2695AEBE00656399 /* Screen-Share */,
 				2F44AE2B2695AEC100656399 /* Screen-ShareTests */,
 				2F44AE362695AEC100656399 /* Screen-ShareUITests */,
+				2F44AE4D2695AF7B00656399 /* ScreenShare */,
+				2F44AE5A2695AF7B00656399 /* ScreenShareSetupUI */,
+				2F44AE4A2695AF7B00656399 /* Frameworks */,
 				2F44AE0E2695AEBE00656399 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -97,6 +163,8 @@
 				2F44AE0D2695AEBE00656399 /* Screen-Share.app */,
 				2F44AE282695AEC100656399 /* Screen-ShareTests.xctest */,
 				2F44AE332695AEC100656399 /* Screen-ShareUITests.xctest */,
+				2F44AE492695AF7B00656399 /* ScreenShare.appex */,
+				2F44AE562695AF7B00656399 /* ScreenShareSetupUI.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -137,6 +205,35 @@
 			path = "Screen-ShareUITests";
 			sourceTree = "<group>";
 		};
+		2F44AE4A2695AF7B00656399 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				2F44AE4B2695AF7B00656399 /* ReplayKit.framework */,
+				2F44AE582695AF7B00656399 /* UIKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		2F44AE4D2695AF7B00656399 /* ScreenShare */ = {
+			isa = PBXGroup;
+			children = (
+				2F44AE4E2695AF7B00656399 /* SampleHandler.h */,
+				2F44AE4F2695AF7B00656399 /* SampleHandler.m */,
+				2F44AE512695AF7B00656399 /* Info.plist */,
+			);
+			path = ScreenShare;
+			sourceTree = "<group>";
+		};
+		2F44AE5A2695AF7B00656399 /* ScreenShareSetupUI */ = {
+			isa = PBXGroup;
+			children = (
+				2F44AE5B2695AF7B00656399 /* BroadcastSetupViewController.h */,
+				2F44AE5C2695AF7B00656399 /* BroadcastSetupViewController.m */,
+				2F44AE5E2695AF7B00656399 /* Info.plist */,
+			);
+			path = ScreenShareSetupUI;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -147,10 +244,13 @@
 				2F44AE092695AEBE00656399 /* Sources */,
 				2F44AE0A2695AEBE00656399 /* Frameworks */,
 				2F44AE0B2695AEBE00656399 /* Resources */,
+				2F44AE6B2695AF7B00656399 /* Embed App Extensions */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				2F44AE602695AF7B00656399 /* PBXTargetDependency */,
+				2F44AE632695AF7B00656399 /* PBXTargetDependency */,
 			);
 			name = "Screen-Share";
 			productName = "Screen-Share";
@@ -193,6 +293,40 @@
 			productReference = 2F44AE332695AEC100656399 /* Screen-ShareUITests.xctest */;
 			productType = "com.apple.product-type.bundle.ui-testing";
 		};
+		2F44AE482695AF7B00656399 /* ScreenShare */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2F44AE682695AF7B00656399 /* Build configuration list for PBXNativeTarget "ScreenShare" */;
+			buildPhases = (
+				2F44AE452695AF7B00656399 /* Sources */,
+				2F44AE462695AF7B00656399 /* Frameworks */,
+				2F44AE472695AF7B00656399 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ScreenShare;
+			productName = ScreenShare;
+			productReference = 2F44AE492695AF7B00656399 /* ScreenShare.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
+		2F44AE552695AF7B00656399 /* ScreenShareSetupUI */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2F44AE652695AF7B00656399 /* Build configuration list for PBXNativeTarget "ScreenShareSetupUI" */;
+			buildPhases = (
+				2F44AE522695AF7B00656399 /* Sources */,
+				2F44AE532695AF7B00656399 /* Frameworks */,
+				2F44AE542695AF7B00656399 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ScreenShareSetupUI;
+			productName = ScreenShareSetupUI;
+			productReference = 2F44AE562695AF7B00656399 /* ScreenShareSetupUI.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -212,6 +346,12 @@
 						CreatedOnToolsVersion = 12.5.1;
 						TestTargetID = 2F44AE0C2695AEBE00656399;
 					};
+					2F44AE482695AF7B00656399 = {
+						CreatedOnToolsVersion = 12.5.1;
+					};
+					2F44AE552695AF7B00656399 = {
+						CreatedOnToolsVersion = 12.5.1;
+					};
 				};
 			};
 			buildConfigurationList = 2F44AE082695AEBE00656399 /* Build configuration list for PBXProject "Screen-Share" */;
@@ -230,6 +370,8 @@
 				2F44AE0C2695AEBE00656399 /* Screen-Share */,
 				2F44AE272695AEC100656399 /* Screen-ShareTests */,
 				2F44AE322695AEC100656399 /* Screen-ShareUITests */,
+				2F44AE482695AF7B00656399 /* ScreenShare */,
+				2F44AE552695AF7B00656399 /* ScreenShareSetupUI */,
 			);
 		};
 /* End PBXProject section */
@@ -253,6 +395,20 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 		2F44AE312695AEC100656399 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2F44AE472695AF7B00656399 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2F44AE542695AF7B00656399 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -289,6 +445,22 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		2F44AE452695AF7B00656399 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2F44AE502695AF7B00656399 /* SampleHandler.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2F44AE522695AF7B00656399 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2F44AE5D2695AF7B00656399 /* BroadcastSetupViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
@@ -301,6 +473,16 @@
 			isa = PBXTargetDependency;
 			target = 2F44AE0C2695AEBE00656399 /* Screen-Share */;
 			targetProxy = 2F44AE342695AEC100656399 /* PBXContainerItemProxy */;
+		};
+		2F44AE602695AF7B00656399 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 2F44AE552695AF7B00656399 /* ScreenShareSetupUI */;
+			targetProxy = 2F44AE5F2695AF7B00656399 /* PBXContainerItemProxy */;
+		};
+		2F44AE632695AF7B00656399 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 2F44AE482695AF7B00656399 /* ScreenShare */;
+			targetProxy = 2F44AE622695AF7B00656399 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -548,6 +730,78 @@
 			};
 			name = Release;
 		};
+		2F44AE662695AF7B00656399 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = RJW2Z623E3;
+				INFOPLIST_FILE = ScreenShareSetupUI/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.sfvn.sample.Screen-Share.ScreenShareSetupUI";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		2F44AE672695AF7B00656399 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = RJW2Z623E3;
+				INFOPLIST_FILE = ScreenShareSetupUI/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.sfvn.sample.Screen-Share.ScreenShareSetupUI";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		2F44AE692695AF7B00656399 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = RJW2Z623E3;
+				INFOPLIST_FILE = ScreenShare/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.sfvn.sample.Screen-Share.ScreenShare";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		2F44AE6A2695AF7B00656399 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = RJW2Z623E3;
+				INFOPLIST_FILE = ScreenShare/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.sfvn.sample.Screen-Share.ScreenShare";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -583,6 +837,24 @@
 			buildConfigurations = (
 				2F44AE432695AEC100656399 /* Debug */,
 				2F44AE442695AEC100656399 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2F44AE652695AF7B00656399 /* Build configuration list for PBXNativeTarget "ScreenShareSetupUI" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2F44AE662695AF7B00656399 /* Debug */,
+				2F44AE672695AF7B00656399 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2F44AE682695AF7B00656399 /* Build configuration list for PBXNativeTarget "ScreenShare" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2F44AE692695AF7B00656399 /* Debug */,
+				2F44AE6A2695AF7B00656399 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
