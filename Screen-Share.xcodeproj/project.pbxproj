@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		079638CC269E9BE700F357FD /* MainInterface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 079638CB269E9BE700F357FD /* MainInterface.storyboard */; };
 		2F44AE122695AEBE00656399 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 2F44AE112695AEBE00656399 /* AppDelegate.m */; };
 		2F44AE152695AEBE00656399 /* SceneDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 2F44AE142695AEBE00656399 /* SceneDelegate.m */; };
 		2F44AE182695AEBE00656399 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2F44AE172695AEBE00656399 /* ViewController.m */; };
@@ -72,6 +73,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		079638CB269E9BE700F357FD /* MainInterface.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = MainInterface.storyboard; sourceTree = "<group>"; };
 		2F44AE0D2695AEBE00656399 /* Screen-Share.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Screen-Share.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		2F44AE102695AEBE00656399 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		2F44AE112695AEBE00656399 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -230,6 +232,7 @@
 				2F44AE5B2695AF7B00656399 /* BroadcastSetupViewController.h */,
 				2F44AE5C2695AF7B00656399 /* BroadcastSetupViewController.m */,
 				2F44AE5E2695AF7B00656399 /* Info.plist */,
+				079638CB269E9BE700F357FD /* MainInterface.storyboard */,
 			);
 			path = ScreenShareSetupUI;
 			sourceTree = "<group>";
@@ -412,6 +415,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				079638CC269E9BE700F357FD /* MainInterface.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

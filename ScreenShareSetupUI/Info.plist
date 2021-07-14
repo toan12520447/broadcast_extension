@@ -32,8 +32,8 @@
 		</dict>
 		<key>NSExtensionPointIdentifier</key>
 		<string>com.apple.broadcast-services-setupui</string>
-		<key>NSExtensionPrincipalClass</key>
-		<string>BroadcastSetupViewController</string>
+		<key>NSExtensionMainStoryboard</key>
+		<string>MainInterface</string>
 	</dict>
 </dict>
 </plist>

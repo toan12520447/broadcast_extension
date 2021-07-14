@@ -8,6 +8,13 @@
 #import "BroadcastSetupViewController.h"
 
 @implementation BroadcastSetupViewController
+- (void)viewDidLoad{
+    [super viewDidLoad];
+//    [self userDidFinishSetup];
+}
+- (IBAction)onbtnStartScreenShare:(id)sender{
+    [self userDidFinishSetup];
+}
 
 // Call this method when the user has finished interacting with the view controller and a broadcast stream can start
 - (void)userDidFinishSetup {

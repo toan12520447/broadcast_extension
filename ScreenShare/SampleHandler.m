@@ -14,6 +14,12 @@
 - (void)broadcastStartedWithSetupInfo:(NSDictionary<NSString *,NSObject *> *)setupInfo {
     // User has requested to start the broadcast. Setup info from the UI extension can be supplied but optional.
     NSLog(@"[SF_LOG] User has requested to start the broadcast. Setup info from the UI extension can be supplied but optional.");
+    [[NSNotificationCenter defaultCenter] addObserver:self
+                                             selector:@selector(onReceivedStopBroadcast)
+                                                 name:@"stopBroadcastExtension" object:nil];
+}
+- (void)onReceivedStopBroadcast{
+    [self broadcastFinished];
 }
 
 - (void)broadcastPaused {
