@@ -7,16 +7,17 @@
 
 
 #import "SampleHandler.h"
+#import "ShareDataUI.h"
 @implementation SampleHandler{
     UIImage *image;
+    ShareDataUI *data;
 }
 
 - (void)broadcastStartedWithSetupInfo:(NSDictionary<NSString *,NSObject *> *)setupInfo {
     // User has requested to start the broadcast. Setup info from the UI extension can be supplied but optional.
     NSLog(@"[SF_LOG] User has requested to start the broadcast. Setup info from the UI extension can be supplied but optional.");
-    [[NSNotificationCenter defaultCenter] addObserver:self
-                                             selector:@selector(onReceivedStopBroadcast)
-                                                 name:@"stopBroadcastExtension" object:nil];
+    data = [[ShareDataUI alloc] init];
+    
 }
 - (void)onReceivedStopBroadcast{
     [self broadcastFinished];
@@ -43,22 +44,23 @@
         case RPSampleBufferTypeVideo:
             // Handle video sample buffer
             NSLog(@"[SF_LOG]: Handle video sample buffer");
-            CVPixelBufferRef pixelBuffer = CMSampleBufferGetImageBuffer(sampleBuffer);
-             if (pixelBuffer == nil) {
-              return;
-             }else{
-                 CIImage *ciImage = [CIImage imageWithCVPixelBuffer:pixelBuffer];
-                 CIContext *temporaryContext = [CIContext contextWithOptions:nil];
-                 CGImageRef videoImage = [temporaryContext
-                                    createCGImage:ciImage
-                                    fromRect:CGRectMake(0, 0,
-                                           CVPixelBufferGetWidth(pixelBuffer),
-                                           CVPixelBufferGetHeight(pixelBuffer))];
-
-                 UIImage *uiImage = [UIImage imageWithCGImage:videoImage];
-                 NSLog(@"[SF_LOG] image: %@", NSStringFromCGSize(uiImage.size));
-                 CGImageRelease(videoImage);
-             }
+            [data processFrame:sampleBuffer];
+//            CVPixelBufferRef pixelBuffer = CMSampleBufferGetImageBuffer(sampleBuffer);
+//             if (pixelBuffer == nil) {
+//              return;
+//             }else{
+//                 CIImage *ciImage = [CIImage imageWithCVPixelBuffer:pixelBuffer];
+//                 CIContext *temporaryContext = [CIContext contextWithOptions:nil];
+//                 CGImageRef videoImage = [temporaryContext
+//                                    createCGImage:ciImage
+//                                    fromRect:CGRectMake(0, 0,
+//                                           CVPixelBufferGetWidth(pixelBuffer),
+//                                           CVPixelBufferGetHeight(pixelBuffer))];
+//
+//                 UIImage *uiImage = [UIImage imageWithCGImage:videoImage];
+//                 NSLog(@"[SF_LOG] image: %@", NSStringFromCGSize(uiImage.size));
+//                 CGImageRelease(videoImage);
+//             }
             break;
         case RPSampleBufferTypeAudioApp:
             // Handle audio sample buffer for app audio
